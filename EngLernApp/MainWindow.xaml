@@ -15,7 +15,9 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="120"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition  Width="10"/> <!-- second column -->
+            <ColumnDefinition Width="*"/> <!-- third column -->
+            
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
@@ -27,8 +29,8 @@
             <RowDefinition/>
             
         </Grid.RowDefinitions>
-        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Fill="DarkRed"/>
-        <Rectangle Grid.Row="1" Grid.Column="0" Grid.RowSpan="7" Fill="DarkRed"  ></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Fill="DarkRed"/>
+        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="7" Fill="DarkRed"  ></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="0" Fill="Orange"></Rectangle>
 
         
@@ -44,28 +46,76 @@
         </Button>
 
 
-        <StackPanel></StackPanel>
+        
         <Button Grid.Row="2" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_TOEFL.png"></Image>
                 <Separator Width="6" Background="Tomato"/>
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow" > TOEFL </TextBlock>
                 
-                <ComboBox Height="10" Width="10">
-                    <ComboBoxItem>
-                        <StackPanel Orientation="Vertical">
-                            <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
-                            <TextBlock>Аudio 
-                                <LineBreak/>
-                                materials
-                            </TextBlock>
-                        </StackPanel>
-                    </ComboBoxItem>
-                </ComboBox>
-                
             </StackPanel>
         </Button>
-        
+
+        <!--ComboBox for TOEFL -->
+        <ComboBox   Height="20" Width="15" Grid.Column="1" Grid.Row="2" Margin="-6 0 1 0">
+            <Button>
+                <ComboBoxItem Background="Tomato">
+                    <StackPanel Orientation="Vertical">
+                        <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
+                        <TextBlock Background="Tomato" Foreground="Yellow">Text 
+                                <LineBreak/>
+                                materials
+                        </TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+            </Button>
+
+            <Button>
+                <ComboBoxItem Background="Tomato">
+                    <StackPanel Orientation="Vertical">
+                        <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Текстовые Материалы.png"></Image>
+                        <TextBlock Background="Tomato" Foreground="Yellow">Аudio 
+                                <LineBreak/>
+                                materials
+                        </TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                
+            </Button>
+            
+        </ComboBox>
+        <!-- -->
+
+        <!--ComboBox for IELTS -->
+        <ComboBox   Height="20" Width="15" Grid.Column="1" Grid.Row="3" Margin="-6 0 1 0">
+            <Button>
+                <ComboBoxItem Background="Tomato">
+                    <StackPanel Orientation="Vertical">
+                        <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
+                        <TextBlock Background="Tomato" Foreground="Yellow">Text 
+                                <LineBreak/>
+                                materials
+                        </TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+            </Button>
+
+            <Button>
+                <ComboBoxItem Background="Tomato">
+                    <StackPanel Orientation="Vertical">
+                        <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Текстовые Материалы.png"></Image>
+                        <TextBlock Background="Tomato" Foreground="Yellow">Аudio 
+                                <LineBreak/>
+                                materials
+                        </TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+
+            </Button>
+
+        </ComboBox>
+        <!-- -->
+
 
         <Button Grid.Row="3" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
             <StackPanel Orientation="Horizontal" >
