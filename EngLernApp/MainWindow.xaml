@@ -38,8 +38,15 @@
 
         
             <Button Grid.Row="1" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+
             <StackPanel Orientation="Horizontal" >
-                <Image Height="55" Source="D:\Изучение C# и XAML\Pictures\Иконка_Домашняя страница.png"></Image>
+                <Image Height="65" Source="D:\Изучение C# и XAML\Pictures\Иконка_Домашняя страница.png"></Image>
                 <Separator Width="0.5" Background="Tomato"/>
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> HOME</TextBlock>
             </StackPanel>
@@ -48,6 +55,13 @@
 
         
         <Button Grid.Row="2" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_TOEFL.png"></Image>
                 <Separator Width="6" Background="Tomato"/>
@@ -59,10 +73,13 @@
         <!--ComboBox for TOEFL -->
         <ComboBox   Height="20" Width="15" Grid.Column="1" Grid.Row="2" Margin="-6 0 1 0">
             <Button>
-                <ComboBoxItem Background="Tomato">
+
+                
+
+                <ComboBoxItem Background="DarkKhaki" >
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
-                        <TextBlock Background="Tomato" Foreground="Yellow">Text 
+                        <TextBlock Background="Purple" Foreground="Yellow">Text 
                                 <LineBreak/>
                                 materials
                         </TextBlock>
@@ -71,10 +88,12 @@
             </Button>
 
             <Button>
-                <ComboBoxItem Background="Tomato">
+
+
+                <ComboBoxItem Background="DarkKhaki">
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Текстовые Материалы.png"></Image>
-                        <TextBlock Background="Tomato" Foreground="Yellow">Аudio 
+                        <TextBlock Background="Purple" Foreground="Yellow">Аudio 
                                 <LineBreak/>
                                 materials
                         </TextBlock>
@@ -87,7 +106,7 @@
         <!-- -->
 
         <!--ComboBox for IELTS -->
-        <ComboBox   Height="20" Width="15" Grid.Column="1" Grid.Row="3" Margin="-6 0 1 0">
+        <ComboBox   Height="20" Width="15"  Grid.Column="1" Grid.Row="3" Margin="-6 0 1 0">
             <Button>
                 <ComboBoxItem Background="Tomato">
                     <StackPanel Orientation="Vertical">
@@ -118,6 +137,13 @@
 
 
         <Button Grid.Row="3" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_IELTS.png"></Image>
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> IELTS</TextBlock>
@@ -125,6 +151,13 @@
         </Button>
 
         <Button Grid.Row="4" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Книги.png"></Image>
                 <Separator Width="6" Background="Tomato"/>
@@ -133,6 +166,13 @@
         </Button>
 
         <Button Grid.Row="5" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиокниги.png"></Image>
                 <Separator Width="6" Background="Tomato"/>
@@ -144,6 +184,13 @@
         </Button>
 
         <Button Grid.Row="6" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Словарь.jpg"></Image>
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> Vocabulary</TextBlock>
