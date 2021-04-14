@@ -14,7 +14,7 @@
 
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition  Width="120" />
+            <ColumnDefinition  Width="120"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -51,8 +51,21 @@
                 <Separator Width="6" Background="Tomato"/>
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow" > TOEFL </TextBlock>
                 
+                <ComboBox Height="10" Width="10">
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Vertical">
+                            <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
+                            <TextBlock>Аudio 
+                                <LineBreak/>
+                                materials
+                            </TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+                
             </StackPanel>
         </Button>
+        
 
         <Button Grid.Row="3" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
             <StackPanel Orientation="Horizontal" >
