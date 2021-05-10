@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace WpfAppChapter2
 {
     /// <summary>
-    /// Логика взаимодействия для TOEFL.xaml
+    /// Логика взаимодействия для IELTS.xaml
     /// </summary>
-    public partial class TOEFL : Page
+    public partial class IELTS : Page
     {
-        public TOEFL()
+        public IELTS()
         {
             InitializeComponent();
         }
-
     }
 }

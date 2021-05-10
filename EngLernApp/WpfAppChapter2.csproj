@@ -55,9 +55,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Audiobooks.xaml.cs">
+      <DependentUpon>Audiobooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Books.xaml.cs">
+      <DependentUpon>Books.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IELTS.xaml.cs">
+      <DependentUpon>IELTS.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TOEFL.xaml.cs">
       <DependentUpon>TOEFL.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vocabulary.xaml.cs">
+      <DependentUpon>Vocabulary.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Audiobooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Books.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IELTS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +102,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="TOEFL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vocabulary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

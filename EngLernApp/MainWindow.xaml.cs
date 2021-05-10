@@ -23,7 +23,42 @@ namespace WpfAppChapter2
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new Home();
 
         }
+
+        public void ButHome_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Home());
+        }
+
+        public void ButTOEFL_Click(object sender, RoutedEventArgs e)
+        {
+           MainFrame.Navigate(new TOEFL());
+        }
+
+
+        public void ButIELTS_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new IELTS());
+        }
+
+        public void ButBooks_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Books());
+        }
+
+        public void ButAudiobooks_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Audiobooks());
+        }
+
+        public void ButVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Vocabulary());
+        }
+
+
+
     }
 }

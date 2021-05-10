@@ -30,3 +30,13 @@ C:\Users\Kami\Desktop\Приложение для изучения анг\Раз
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\WpfAppChapter2.pdb
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TOEFL.g.cs
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TOEFL.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Home.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Home.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Audiobooks.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Books.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\IELTS.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Vocabulary.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Audiobooks.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Books.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\IELTS.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Vocabulary.baml
