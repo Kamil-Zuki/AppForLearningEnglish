@@ -5,57 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppChapter2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="640" Width="1340">
-    <Grid >
+        Title="MainWindow" Height="640" Width="1340" MinHeight="640" MinWidth="1280">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Tomato"/>
+            <Setter Property="Foreground" Value="Yellow"/>
 
-        <Grid.Background>
-            <ImageBrush ImageSource="D:\Изучение C# и XAML\Pictures\English.jpeg"/>
-        </Grid.Background>
+        </Style>
+        
+        
+        <!--<Separator Width="0.5" Background="Tomato"/> -->
+
+        
+    </Window.Resources>
+    
+    <Grid >
 
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="120"/>
-            <ColumnDefinition  Width="10"/> <!-- second column -->
-            <ColumnDefinition Width="*"/> <!-- third column -->
-            
+            <ColumnDefinition  Width="10"/>
+            <!-- second column -->
+            <ColumnDefinition Width="*"/>
+            <!-- third column -->
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="90.667"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
-            
+
         </Grid.RowDefinitions>
         <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Fill="DarkRed"/>
         <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="7" Fill="DarkRed"  ></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="0" Fill="Orange"></Rectangle>
 
-        
-      <Image Source="D:\Изучение C# и XAML\Pictures\Иконка_Логотип.jpg" Margin="5 5 5 5"></Image>
 
-        
-            <Button Grid.Row="1" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+        <Image Source="D:\Изучение C# и XAML\Pictures\Иконка_Логотип.jpg" Margin="5 5 5 5" OpacityMask="Black"/>
 
+
+        <Button x:Name="ButTOEFL" Grid.Row="1" Grid.Column="0" 
+                     Margin="5 5 5 5" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="25"/>
                 </Style>
             </Button.Resources>
 
+
             <StackPanel Orientation="Horizontal" >
                 <Image Height="65" Source="D:\Изучение C# и XAML\Pictures\Иконка_Домашняя страница.png"></Image>
-                <Separator Width="0.5" Background="Tomato"/>
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> HOME</TextBlock>
+                <Separator Width="0.5" />
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" > HOME</TextBlock>
             </StackPanel>
         </Button>
 
 
-        
-        <Button Grid.Row="2" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
 
+        <Button Grid.Row="2" Grid.Column="0"  Margin="5 5 5 5">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="25"/>
@@ -64,9 +75,9 @@
 
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_TOEFL.png"></Image>
-                <Separator Width="6" Background="Tomato"/>
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow" > TOEFL </TextBlock>
-                
+                <Separator Width="6" />
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" > TOEFL</TextBlock>
+
             </StackPanel>
         </Button>
 
@@ -74,12 +85,12 @@
         <ComboBox   Height="20" Width="15" Grid.Column="1" Grid.Row="2" Margin="-6 0 1 0">
             <Button>
 
-                
 
-                <ComboBoxItem Background="DarkKhaki" >
+
+                <ComboBoxItem Background="Tomato" >
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
-                        <TextBlock Background="Purple" Foreground="Yellow">Text 
+                        <TextBlock >Text 
                                 <LineBreak/>
                                 materials
                         </TextBlock>
@@ -90,18 +101,18 @@
             <Button>
 
 
-                <ComboBoxItem Background="DarkKhaki">
+                <ComboBoxItem Background="Tomato">
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Текстовые Материалы.png"></Image>
-                        <TextBlock Background="Purple" Foreground="Yellow">Аudio 
+                        <TextBlock  >Аudio 
                                 <LineBreak/>
                                 materials
                         </TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
-                
+
             </Button>
-            
+
         </ComboBox>
         <!-- -->
 
@@ -111,7 +122,7 @@
                 <ComboBoxItem Background="Tomato">
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
-                        <TextBlock Background="Tomato" Foreground="Yellow">Text 
+                        <TextBlock >Text 
                                 <LineBreak/>
                                 materials
                         </TextBlock>
@@ -120,10 +131,10 @@
             </Button>
 
             <Button>
-                <ComboBoxItem Background="Tomato">
+                <ComboBoxItem >
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Текстовые Материалы.png"></Image>
-                        <TextBlock Background="Tomato" Foreground="Yellow">Аudio 
+                        <TextBlock Background="Tomato" >Аudio 
                                 <LineBreak/>
                                 materials
                         </TextBlock>
@@ -136,7 +147,7 @@
         <!-- -->
 
 
-        <Button Grid.Row="3" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+        <Button Grid.Row="3" Grid.Column="0"  Margin="5 5 5 5" >
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -150,7 +161,7 @@
             </StackPanel>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+        <Button Grid.Row="4" Grid.Column="0"  Margin="5 5 5 5" >
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -160,12 +171,12 @@
 
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Книги.png"></Image>
-                <Separator Width="6" Background="Tomato"/>
+                <Separator Width="6" />
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> Books</TextBlock>
             </StackPanel>
         </Button>
 
-        <Button Grid.Row="5" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+        <Button Grid.Row="5" Grid.Column="0"  Margin="5 5 5 5" >
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -175,15 +186,15 @@
 
             <StackPanel Orientation="Horizontal" >
                 <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиокниги.png"></Image>
-                <Separator Width="6" Background="Tomato"/>
-                <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow" TextWrapping="Wrap"> Audio-
+                <Separator Width="6" />
+                <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"  TextWrapping="Wrap"> Audio-
                 <LineBreak/>
                     books
                 </TextBlock>
             </StackPanel>
         </Button>
 
-        <Button Grid.Row="6" Grid.Column="0" Background="Tomato" Margin="5 5 5 5" >
+        <Button Grid.Row="6" Grid.Column="0"  Margin="5 5 5 5" >
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -196,9 +207,11 @@
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> Vocabulary</TextBlock>
             </StackPanel>
         </Button>
+        
+        <Frame Background="Red" Content="Frame" Grid.Column="2"   Grid.Row="1" Grid.RowSpan="6"  Grid.ColumnSpan="1"/>
 
-        
-        
+
+
 
     </Grid>
 </Window>
