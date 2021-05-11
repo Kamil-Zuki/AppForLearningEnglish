@@ -136,5 +136,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="USAEngland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ava.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rain-2.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

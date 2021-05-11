@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppChapter2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="640" Width="1340" MinHeight="640" MinWidth="1280">
+        Title="MainWindow" Height="640" Width="1340" MinHeight="610" MinWidth="1080">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="Tomato"/>
             <Setter Property="Foreground" Value="Yellow"/>
 
         </Style>
-        
-        
+
+
         <!--<Separator Width="0.5" Background="Tomato"/> -->
 
-        
+
     </Window.Resources>
-    
+
     <Grid >
 
 
@@ -26,26 +26,35 @@
             <ColumnDefinition  Width="120"/>
             <ColumnDefinition  Width="10"/>
             <!-- second column -->
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="431*" />
+            <ColumnDefinition Width="170*"/>
             <!-- third column -->
 
         </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition Height="90.667"/>
+            <RowDefinition />
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
 
         </Grid.RowDefinitions>
-        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Fill="DarkRed"/>
-        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="7" Fill="DarkRed"  ></Rectangle>
-        <Rectangle Grid.Row="0" Grid.Column="0" Fill="Orange"></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF570238" Offset="0"/>
+                    <GradientStop Color="#FFE88A3C" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="6" Fill="#FF893232"  ></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="0" Fill="#FFFDCB6E" RadiusY="10" RadiusX="10" Grid.ColumnSpan="2" />
 
 
-        <Image Source="D:\Изучение C# и XAML\Pictures\Иконка_Логотип.jpg" Margin="5 5 5 5" OpacityMask="Black"/>
+        <Image Source="C:\Users\Kami\Desktop\Приложение для изучения анг\USAEngland.jpg" Margin="5,5,0,5" OpacityMask="Black"/>
 
 
         <Button x:Name="ButTOEFL" Click="ButHome_Click"   Grid.Row="1" Grid.Column="0" 
@@ -82,7 +91,8 @@
         </Button>
 
         <!--ComboBox for TOEFL -->
-        <ComboBox   Height="20" Width="15" Grid.Column="1" Grid.Row="2" Margin="-6 0 1 0">
+        <ComboBox Grid.Row="2" Margin="114,35.333,1,35.333" Grid.ColumnSpan="2">
+
             <Button>
 
 
@@ -117,7 +127,7 @@
         <!-- -->
 
         <!--ComboBox for IELTS -->
-        <ComboBox   Height="20" Width="15"  Grid.Column="1" Grid.Row="3" Margin="-6 0 1 0">
+        <ComboBox Grid.Row="3" Margin="114,35.334,1,35.333" Grid.ColumnSpan="2">
             <Button>
                 <ComboBoxItem Background="Tomato">
                     <StackPanel Orientation="Vertical">
@@ -161,7 +171,7 @@
             </StackPanel>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="0"  Margin="5 5 5 5" >
+        <Button x:Name="Books" Click="ButBooks_Click"  Grid.Row="4" Grid.Column="0"  Margin="5 5 5 5" >
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -207,8 +217,28 @@
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="Yellow"> Vocabulary</TextBlock>
             </StackPanel>
         </Button>
-        
-        <Frame x:Name="MainFrame" Background="White"  Grid.Column="2"   Grid.Row="1" Grid.RowSpan="6"  Grid.ColumnSpan="1"/>
+
+        <Frame x:Name="MainFrame" Background="White"  Grid.Column="2"   Grid.Row="1" Grid.RowSpan="6"  Grid.ColumnSpan="2"/>
+        <Label Content="Nick-Name" Grid.Column="3" Margin="100 0 0 30" HorizontalContentAlignment="Center" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="18" Foreground="#FFF9E518" FontWeight="Bold" FontFamily="Algerian" Height="31.09" Width="194.332" Panel.ZIndex="1"/>
+        <Label Content="F-L" Grid.Column="3" Margin="100 0 0 -30"  HorizontalContentAlignment="Center" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="18" Foreground="#FF48ECBF" FontWeight="Bold" FontFamily="Bodoni MT" Height="31.09" Width="193.667" Panel.ZIndex="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.165"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.33"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="65"  VerticalAlignment="Top" Width="321.5" Stroke="Black" Fill="#FF6A5151" RadiusX="40" RadiusY="40"/>
+
+        <Ellipse x:Name="ElipsAva" StrokeThickness="3" Grid.Column="3" HorizontalAlignment="Left" Height="65"  Stroke="Black" VerticalAlignment="Top" Width="79.668">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Ava.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+
+
 
 
 
