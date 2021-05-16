@@ -28,13 +28,35 @@ namespace WpfAppChapter2
 
         }
 
+        public int k = 0;
+
         public void ClickExit(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
 
         }
 
-        
+        public void Click_FullScreen(object sender, RoutedEventArgs e)
+        {
+            
+            k++;
+            WindowState = WindowState.Maximized;
+            WindowStyle = WindowStyle.None;
+            FullScreen.Content = "Normal screen";
+            if (k == 2)
+            {
+                WindowState = WindowState.Maximized;
+                FullScreen.Content = "Full screen";
+                WindowStyle = WindowStyle.ThreeDBorderWindow;
+                k = 0;
+            }
+
+        }
+
+        public void OpenWindowSignIN(object sender, RoutedEventArgs e)
+        {
+            new Window_Sign_IN().ShowDialog();
+        }
 
         public void ButHome_Click(object sender, RoutedEventArgs e)
         {

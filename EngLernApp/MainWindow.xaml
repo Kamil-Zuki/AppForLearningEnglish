@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="AppForLearningEnglish"
         WindowState="Maximized"
-         WindowStyle="ThreeDBorderWindow">
+         WindowStyle="ThreeDBorderWindow"
+        MinHeight="620" MinWidth="880">
 
     <Window.Resources>
         <Style TargetType="Button">
@@ -15,22 +16,19 @@
             <Setter Property="Foreground" Value="Yellow"/>
 
         </Style>
-
-
+        
         <!--<Separator Width="0.5" Background="Tomato"/> -->
-
 
     </Window.Resources>
 
     <Grid >
 
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="120"/>
             <ColumnDefinition  Width="10"/>
             <!-- second column -->
-            <ColumnDefinition Width="39*" />
-            <ColumnDefinition Width="413*"/>
+            <ColumnDefinition Width="127*" />
+            <ColumnDefinition Width="325*"/>
             <ColumnDefinition Width="178*"/>
             <!-- third column -->
 
@@ -40,7 +38,7 @@
             <RowDefinition Height="65"/>
             <RowDefinition Height="90.667"/>
             <RowDefinition/>
-            <RowDefinition />
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -95,7 +93,7 @@
         </Button>
 
         <!--ComboBox for TOEFL -->
-        <ComboBox Grid.Row="2" Margin="114,35.333,1,35.333" Grid.ColumnSpan="2">
+        <ComboBox Grid.Row="2" Margin="114,35.333,1,34.334" Grid.ColumnSpan="2">
 
             <Button x:Name="TextMaterialsTOELF" Click="ClickTextMaterialsTOELF">
 
@@ -131,7 +129,7 @@
         <!-- -->
 
         <!--ComboBox for IELTS -->
-        <ComboBox Grid.Row="3" Margin="114,35.334,1,35.333" Grid.ColumnSpan="2">
+        <ComboBox Grid.Row="3" Margin="114,35.334,1,34.332" Grid.ColumnSpan="2">
             <Button x:Name="TextMaterialsIELTS" Click="ClickTextMaterialsIELTS" >
 
                 <ComboBoxItem Background="Tomato">
@@ -244,29 +242,43 @@
                 <ImageBrush ImageSource="Ava.jpg"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Button x:Name="Exit" Click="ClickExit" Content="Exit" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="39.667"  Height="19.96">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-        </Button>
 
 
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" Height="19.96">
+            <Button x:Name="Exit" Click="ClickExit" Content="Exit" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left"   Width="39.667"  Height="19.96">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
-        <Label FontSize="28" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Foreground="#FFF9E513" Grid.Row="0" Grid.Column="3" x:Name="PageTitle" FontWeight="Bold"></Label>
-
-
-        <StackPanel Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right"  VerticalAlignment="Top">
-            <Button x:Name="SignIN"  Content="Sign IN"  Width="55.667"  Height="19.96" Background="White" Foreground="Red" FontWeight="Bold" >
+            <Button x:Name="FullScreen" Width="83.333" Click="Click_FullScreen" Content="Full Screen" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left"  VerticalAlignment="Top"  Height="19.96" Margin="5.667,0,0,0">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="15"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            
-            
+
+        </StackPanel>
+
+
+
+
+        <Label FontSize="28" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Foreground="#FFF9E513" Grid.Row="0" Grid.Column="3" x:Name="PageTitle" FontWeight="Bold" Height="10" Margin="157.5,27.5" Width="10"></Label>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right"  VerticalAlignment="Top" Height="44.92" Width="56.667">
+            <Button x:Name="SignIN" Click="OpenWindowSignIN"  Content="Sign IN"  Width="55.667"  Height="19.96" Background="White" Foreground="Red" FontWeight="Bold" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
             <Separator Background="#FFBB5F3B"></Separator>
             <Button x:Name="SignUP"  Content="Sign UP"  Width="56.667"  Height="19.96" Background="White" Foreground="Red" FontWeight="Bold" >
                 <Button.Resources>
@@ -275,9 +287,10 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            
+
         </StackPanel>
-       
+
+
 
 
 

@@ -48,5 +48,5 @@ C:\Users\Kami\Desktop\Приложение для изучения анг\Раз
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\AudiomaterialsTOELF.baml
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TextmaterialsIELTS.baml
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TextmaterialsTOELF.baml
-C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TasksTextMaterialsIELTS.g.cs
-C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TasksTextMaterialsIELTS.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Window_Sign_IN.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Window_Sign_IN.baml
