@@ -40,3 +40,13 @@ C:\Users\Kami\Desktop\Приложение для изучения анг\Раз
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Books.baml
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\IELTS.baml
 C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\Vocabulary.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\AudiomaterialsIELS.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\AudiomaterialsTOELF.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TextmaterialsIELTS.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TextmaterialsTOELF.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\AudiomaterialsIELS.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\AudiomaterialsTOELF.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TextmaterialsIELTS.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TextmaterialsTOELF.baml
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TasksTextMaterialsIELTS.g.cs
+C:\Users\Kami\Desktop\Приложение для изучения анг\Разрабока\AppForLearningEnglish\EngLernApp\obj\Debug\TasksTextMaterialsIELTS.baml

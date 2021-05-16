@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppChapter2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="640" Width="1340" MinHeight="610" MinWidth="1080">
+        Title="AppForLearningEnglish"
+        WindowState="Maximized"
+         WindowStyle="ThreeDBorderWindow">
+
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="Tomato"/>
@@ -26,15 +29,16 @@
             <ColumnDefinition  Width="120"/>
             <ColumnDefinition  Width="10"/>
             <!-- second column -->
-            <ColumnDefinition Width="431*" />
-            <ColumnDefinition Width="170*"/>
+            <ColumnDefinition Width="39*" />
+            <ColumnDefinition Width="413*"/>
+            <ColumnDefinition Width="178*"/>
             <!-- third column -->
 
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
-            <RowDefinition/>
+            <RowDefinition Height="90.667"/>
             <RowDefinition/>
             <RowDefinition />
             <RowDefinition/>
@@ -42,7 +46,7 @@
             <RowDefinition/>
 
         </Grid.RowDefinitions>
-        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF570238" Offset="0"/>
@@ -93,7 +97,7 @@
         <!--ComboBox for TOEFL -->
         <ComboBox Grid.Row="2" Margin="114,35.333,1,35.333" Grid.ColumnSpan="2">
 
-            <Button>
+            <Button x:Name="TextMaterialsTOELF" Click="ClickTextMaterialsTOELF">
 
 
 
@@ -108,7 +112,7 @@
                 </ComboBoxItem>
             </Button>
 
-            <Button>
+            <Button x:Name="AudioMaterialsTOELF" Click="ClickAudioMaterialsTOELF">
 
 
                 <ComboBoxItem Background="Tomato">
@@ -128,7 +132,8 @@
 
         <!--ComboBox for IELTS -->
         <ComboBox Grid.Row="3" Margin="114,35.334,1,35.333" Grid.ColumnSpan="2">
-            <Button>
+            <Button x:Name="TextMaterialsIELTS" Click="ClickTextMaterialsIELTS" >
+
                 <ComboBoxItem Background="Tomato">
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Аудиоматериалы.png"></Image>
@@ -140,7 +145,7 @@
                 </ComboBoxItem>
             </Button>
 
-            <Button>
+            <Button x:Name="AudioMaterialsIELTS" Click="ClickAudioMaterialsIELTS" >
                 <ComboBoxItem >
                     <StackPanel Orientation="Vertical">
                         <Image Height="50" Source="D:\Изучение C# и XAML\Pictures\Иконка_Текстовые Материалы.png"></Image>
@@ -218,9 +223,11 @@
             </StackPanel>
         </Button>
 
-        <Frame x:Name="MainFrame" Background="White"  Grid.Column="2"   Grid.Row="1" Grid.RowSpan="6"  Grid.ColumnSpan="2"/>
-        <Label Content="Nick-Name" Grid.Column="3" Margin="100 0 0 30" HorizontalContentAlignment="Center" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="18" Foreground="#FFF9E518" FontWeight="Bold" FontFamily="Algerian" Height="31.09" Width="194.332" Panel.ZIndex="1"/>
-        <Label Content="F-L" Grid.Column="3" Margin="100 0 0 -30"  HorizontalContentAlignment="Center" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="18" Foreground="#FF48ECBF" FontWeight="Bold" FontFamily="Bodoni MT" Height="31.09" Width="193.667" Panel.ZIndex="1">
+        <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Background="White"  Grid.Column="2"   Grid.Row="1" Grid.RowSpan="6"  Grid.ColumnSpan="3"/>
+
+
+        <Label Content="Nick-Name" Grid.Column="4" Margin="100,1.955,-116.332,31.955" HorizontalContentAlignment="Center" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="18" Foreground="#FFF9E518" FontWeight="Bold" FontFamily="Algerian" Height="31.09" Width="194.332" Panel.ZIndex="1"/>
+        <Label Content="F-L" Grid.Column="4" Margin="100,31.955,-115.667,1.955"  HorizontalContentAlignment="Center" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="18" Foreground="#FF48ECBF" FontWeight="Bold" FontFamily="Bodoni MT" Height="31.09" Width="193.667" Panel.ZIndex="1">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -230,15 +237,47 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="65"  VerticalAlignment="Top" Width="321.5" Stroke="Black" Fill="#FF6A5151" RadiusX="40" RadiusY="40"/>
+        <Rectangle Grid.Column="4" HorizontalAlignment="Left" Height="65"  VerticalAlignment="Top" Width="321.5" Stroke="Black" Fill="#FF6A5151" RadiusX="40" RadiusY="40" Margin="0,0,-143.5,0"/>
 
-        <Ellipse x:Name="ElipsAva" StrokeThickness="3" Grid.Column="3" HorizontalAlignment="Left" Height="65"  Stroke="Black" VerticalAlignment="Top" Width="79.668">
+        <Ellipse x:Name="ElipsAva" StrokeThickness="3" Grid.Column="4" HorizontalAlignment="Left" Height="65"  Stroke="Black" VerticalAlignment="Top" Width="79.668">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="Ava.jpg"/>
             </Ellipse.Fill>
         </Ellipse>
+        <Button x:Name="Exit" Click="ClickExit" Content="Exit" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="39.667"  Height="19.96">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
 
+
+        <Label FontSize="28" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Foreground="#FFF9E513" Grid.Row="0" Grid.Column="3" x:Name="PageTitle" FontWeight="Bold"></Label>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right"  VerticalAlignment="Top">
+            <Button x:Name="SignIN"  Content="Sign IN"  Width="55.667"  Height="19.96" Background="White" Foreground="Red" FontWeight="Bold" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            
+            
+            <Separator Background="#FFBB5F3B"></Separator>
+            <Button x:Name="SignUP"  Content="Sign UP"  Width="56.667"  Height="19.96" Background="White" Foreground="Red" FontWeight="Bold" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            
+        </StackPanel>
+       
 
 
 

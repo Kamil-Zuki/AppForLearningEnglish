@@ -58,6 +58,12 @@
     <Compile Include="Audiobooks.xaml.cs">
       <DependentUpon>Audiobooks.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AudiomaterialsIELS.xaml.cs">
+      <DependentUpon>AudiomaterialsIELS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AudiomaterialsTOELF.xaml.cs">
+      <DependentUpon>AudiomaterialsTOELF.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Books.xaml.cs">
       <DependentUpon>Books.xaml</DependentUpon>
     </Compile>
@@ -67,6 +73,15 @@
     <Compile Include="IELTS.xaml.cs">
       <DependentUpon>IELTS.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TasksTextMaterialsIELTS.xaml.cs">
+      <DependentUpon>TasksTextMaterialsIELTS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TextmaterialsIELTS.xaml.cs">
+      <DependentUpon>TextmaterialsIELTS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TextmaterialsTOELF.xaml.cs">
+      <DependentUpon>TextmaterialsTOELF.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TOEFL.xaml.cs">
       <DependentUpon>TOEFL.xaml</DependentUpon>
     </Compile>
@@ -74,6 +89,14 @@
       <DependentUpon>Vocabulary.xaml</DependentUpon>
     </Compile>
     <Page Include="Audiobooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AudiomaterialsIELS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AudiomaterialsTOELF.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,6 +124,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TasksTextMaterialsIELTS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TextmaterialsIELTS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TextmaterialsTOELF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TOEFL.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +180,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BookCover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Стрелка1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Стрелка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="СтрелкаПр.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Listening.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

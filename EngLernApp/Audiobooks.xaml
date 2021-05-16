@@ -9,6 +9,97 @@
       Title="Audiobooks">
 
     <Grid Background="#FFFFF4AF">
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="4*"/>
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="285*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="262*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="82*"/>
+
+
+        </Grid.ColumnDefinitions>
+
+        <Rectangle  RadiusX="30" RadiusY="30" Margin="0,12.667,0,11.667" Fill="White" Grid.Column="3" Grid.ColumnSpan="11" Grid.RowSpan="9" Grid.Row="1"></Rectangle>
+        <Rectangle Margin="3.071,12.667,0,0" Fill="Aqua" Height="30"  VerticalAlignment="Top"  RadiusX="20" RadiusY="10"  Grid.Column="5" Grid.Row="1"/>
+        <Rectangle Margin="0,12.667,0,0"  Height="30" Fill="Aqua" VerticalAlignment="Top" RadiusX="20" RadiusY="10" Grid.Column="10" Grid.Row="1" Grid.ColumnSpan="3" Panel.ZIndex="1" ></Rectangle>
+
+        <TextBlock  Margin="99.402,14.244,89.232,0" FontSize="18" Grid.Row="1" Grid.Column="5"  Text="Book cover" Width="96.366" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="23.94" />
+        <TextBlock FontSize="18"  Margin="92.503,12.667,72.17,15" Text="Description" Grid.Column="11" HorizontalAlignment="Center" FontWeight="Bold" Width="97.327" Panel.ZIndex="2" Grid.Row="1"></TextBlock>
+        <Label Background="#FFD6F396" HorizontalContentAlignment="Center" Margin="0,37.667,0,0" Height="30" VerticalAlignment="Top"  FontSize="18" HorizontalAlignment="Center"  Grid.Column="11" x:Name="BookTitle" Content="BookTitle" Grid.RowSpan="2" Width="262" FontWeight="Bold" Grid.Row="1"/>
+        <Rectangle RadiusX="20" RadiusY="20" Fill="#FFCFA568" Grid.Column="8" Grid.Row="2" Grid.RowSpan="6" ></Rectangle>
+        <Image Panel.ZIndex="1" Grid.Column="5" Grid.RowSpan="8" Source="C:\Users\Kami\Desktop\Приложение для изучения анг\BookCover.png" OpacityMask="Black" Margin="0,47.667,0,4" Grid.Row="1"/>
+        <Rectangle RadiusX="40" RadiusY="40" Grid.Column="4" Grid.Row="2" Grid.RowSpan="6" Grid.ColumnSpan="3" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFD32828" Offset="0.265"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <Button FontSize="16" Foreground="White"  Background="#FF9C5329" Margin="96.5,6.5,96.5,16.167" x:Name="toRead" Grid.Column="5" Grid.Row="8" Grid.RowSpan="2">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+            <TextBlock Margin="2 -3 2 0"   VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Height="22" Text="Listen"/>
+        </Button>
+
+        <Button  Margin="0 7 0 7" Grid.Column="3" Grid.Row="5">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="Стрелка.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button  Margin="0 7 0 7" Grid.Column="7" Grid.Row="5">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="СтрелкаПр.png"/>
+            </Button.Background>
+        </Button>
+
+        <ScrollViewer Grid.Row="3" Grid.RowSpan="6" Grid.Column="11" Grid.ColumnSpan="3" >
+            <TextBlock ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="True"  FontSize="18" TextWrapping="Wrap"  ></TextBlock>
+        </ScrollViewer>
+
+        <ToolBar Grid.Row="1" Grid.Column="1" Grid.RowSpan="9" Background="#FFCD2424"></ToolBar>
+
     </Grid>
 </Page>
